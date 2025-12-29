@@ -1,0 +1,94 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+#container {
+    width: 300px;
+    height: 500px;
+    border: solid 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    border-radius: 15px;
+    background-color: #39ac73;
+}
+
+#display {
+    height: 10%;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: right;
+    align-items: end;
+    font-size: 6cqh;
+    overflow-wrap: break-word;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-around;
+    margin: 20px 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 10px;
+    flex: 1;
+    margin: 10px;
+}
+
+.row button {
+    flex: 1;
+}
+
+#equate, #clear{
+    flex: 2;
+}
+
+button {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    font-weight:bold;
+    font-size: 130%;
+    transition: opacity 0.1s;
+    
+}
+
+#delete {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#equate {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+.number {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+button:hover {
+    background-color: rgba(68, 68, 68, 0.6);
+}
+
+#delete:hover {
+    background-color: rgba(68, 68, 68, 0.6);
+}
+
+#equate:hover {
+    background-color: rgb(219, 219, 219);
+}
